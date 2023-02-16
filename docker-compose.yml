@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  project-1:
+    image: ${DOCKER_REGISTRY-}project1
+    build:
+      context: .
+      dockerfile: Project-1/Dockerfile
+
+  project-2:
+    image: ${DOCKER_REGISTRY-}project2
+    build:
+      context: .
+      dockerfile: Project-2/Dockerfile
